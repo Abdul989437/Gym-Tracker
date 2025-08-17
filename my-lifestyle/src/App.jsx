@@ -1,0 +1,13 @@
+import Home from "./Pages/home"
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap.bundle.min.js"
+
+function App() {
+  return (
+    <div className="app-container">
+      <Home />
+    </div>
+  )
+}
+
+export default App

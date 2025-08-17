@@ -1,0 +1,11 @@
+.main-content {
+    margin-left: 0;
+    padding: 10px 15px;
+    transition: margin-left 0.3s ease;
+  }
+  
+  @media (min-width: 992px) {
+    .main-content {
+      margin-left: 256px; /* Match the navigation bar width (lg:w-64) */
+    }
+  }
