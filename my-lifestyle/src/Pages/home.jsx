@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { toast, ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
+import Logo from "../images/logo.jpg"
 
 import GlobalStyles from "../Components/GlobalStyles"
 import Sidebar from "../Components/Sidebar"
@@ -252,8 +253,6 @@ const Home = () => {
                 </AnalyticsCard>
               </div>
 
-
-
               <div className="col-12 col-md-6">
                 <AnalyticsCard title="Workout Distribution" icon="fas fa-chart-pie" iconColor="#8B5CF6">
                   <PieChart
@@ -301,6 +300,24 @@ const Home = () => {
       style={{ background: "linear-gradient(135deg, #0a0a0a, #1a1a1a)", minHeight: "100vh" }}
     >
       <GlobalStyles />
+      <div className="d-block d-md-none" style={{ padding: "15px" }}>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <img
+            src={Logo}
+            alt="Logo"
+            style={{ width: "40px", height: "40px", borderRadius: "10px", marginRight: "15px" }}
+          />
+          <div style={{ textAlign: "right", flex: 1 }}>
+            <h2 style={{ fontSize: "1.2rem", color: "#ffffff", margin: 0, fontWeight: "600" }}>
+              Welcome to Aesthetic Zone
+            </h2>
+            <p style={{ fontSize: "0.9rem", color: "#ffffff", margin: 0 }}>
+              Ready to Transform
+            </p>
+          </div>
+        </div>
+     
+      </div>
 
       <Sidebar activeSection={activeSection} setActiveSection={setActiveSection} />
 
